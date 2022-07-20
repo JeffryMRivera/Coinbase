@@ -117,12 +117,18 @@ nav {
 }
 
 .sec-home {
-  display: flex;
-  align-items: center;
   width: 100%;
   max-width: 992px;
   margin: auto;
   padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+.sec-home .intro h3 {
+  font-size: 2rem;
+}
+.sec-home .intro p {
+  font-size: 1rem;
 }
 .sec-home .home-cta {
   flex: 1;
@@ -133,6 +139,12 @@ nav {
 .sec-home .home-cta .home-title {
   width: 20rem;
   font-size: 3rem;
+}
+.sec-home .home-cta .home-description {
+  width: 300px;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
 }
 .sec-home .home-img img {
   width: 90%;
@@ -146,6 +158,12 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.sec-features .intro h3, .sec-onboarding .intro .intro h3, .sec-benefits .intro .intro h3 {
+  font-size: 2rem;
+}
+.sec-features .intro p, .sec-onboarding .intro .intro p, .sec-benefits .intro .intro p {
+  font-size: 1rem;
 }
 .sec-features .intro, .sec-onboarding .intro .intro, .sec-benefits .intro .intro {
   text-align: center;
@@ -240,6 +258,22 @@ nav {
 }
 .sec-footer-cta .footer-cta .cta-description {
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

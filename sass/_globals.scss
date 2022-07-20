@@ -5,6 +5,15 @@
   max-width: 992px;
   margin: auto;
   padding: 3rem;
+
+  .intro {
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
 }
 
 body {
@@ -26,9 +35,9 @@ nav {
 }
 
 .sec-home {
+  @include section-display();
   display: flex;
   align-items: center;
-  @include section-display();
   .home-cta {
     flex: 1;
     .cta-text {
@@ -38,6 +47,16 @@ nav {
     .home-title {
       width: 20rem;
       font-size: 3rem;
+    }
+
+    .home-description {
+      width: 300px;
+    }
+
+    .lead-magnet {
+      .input-col {
+        max-width: 200px;
+      }
     }
   }
 
@@ -165,4 +184,31 @@ nav {
       font-size: 1.1rem;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding {
+    .steps {
+      flex-direction: column;
+      .icon-desc {
+        .title {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .sec-footer-cta {
+    background-image: none;
+    .footer-cta {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // .sec-benefits {
+  //   .intro h3 {
+  //     font-size: 2rem;
+  //   }
+  // }
 }
